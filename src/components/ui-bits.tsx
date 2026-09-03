@@ -51,16 +51,19 @@ export function PriorityPill({ priority }: { priority: string }) {
     <span
       className={cn(
         "inline-flex shrink-0 items-center rounded-full border px-2 py-0.5 text-[11px] font-medium",
-        p.startsWith("high") && "border-destructive/30 bg-destructive/10 text-destructive",
-        p.startsWith("med") && "border-amber/40 bg-amber/15 text-foreground",
-        p.startsWith("low") && "border-teal/40 bg-teal/15 text-foreground",
-        !/^(high|med|low)/.test(p) && "border-border bg-muted text-muted-foreground",
+        /^(high|critical|urgent|p0|p1)/.test(p) &&
+          "border-destructive/30 bg-destructive/10 text-destructive",
+        /^(med|normal|p2)/.test(p) && "border-amber/40 bg-amber/15 text-foreground",
+        /^(low|p3)/.test(p) && "border-teal/40 bg-teal/15 text-foreground",
+        !/^(high|critical|urgent|p0|p1|med|normal|p2|low|p3)/.test(p) &&
+          "border-border bg-muted text-muted-foreground",
       )}
     >
       {priority}
     </span>
   );
 }
+
 
 export function LoadingState({ label, lines = 3 }: { label: string; lines?: number }) {
   return (
