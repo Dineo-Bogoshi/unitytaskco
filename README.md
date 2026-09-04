@@ -56,7 +56,7 @@ If you wish to clone and run the repository locally for development or contribut
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Dineo-Bogoshi/unitytaskco.git
+   git clone [https://github.com/Dineo-Bogoshi/unitytaskco.git](https://github.com/Dineo-Bogoshi/unity-task.git)
    cd unity-task
 
 2. **Install dependencies:**
