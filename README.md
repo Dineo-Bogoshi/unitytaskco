@@ -69,6 +69,6 @@ If you wish to clone and run the repository locally for development or contribut
 
 ---
 
-This prototype was generated and iterated using [Lovable](https://lovable.dev). Structured prompt engineering techniques were applied across the application to enforce strict schema outputs, handle interactive loading states, ensure reliable execution across the Meeting-to-Research-to-Planner workflow.
+> This prototype was generated and iterated using [Lovable](https://lovable.dev). Structured prompt engineering techniques were applied across the application to enforce strict schema outputs, handle interactive loading states, ensure reliable execution across the Meeting-to-Research-to-Planner workflow.
 
 **Live app**: https://unitytaskco.lovable.app
