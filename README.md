@@ -1,68 +1,74 @@
-# Unity AI Assistant
+# Unity Task
 
-Build a modern, responsive web application called “Unity Task” that helps professionals automate daily work tasks using AI.  
+**Unity Task** is a modern, responsive SaaS application designed to help professionals automate their daily work tasks using AI. It streamlines workflow management by connecting meeting summaries directly into deep research and automated task scheduling.
 
-The application should have a clean, professional UI with a dashboard layout, sidebar navigation, and interactive components.  
+> **Disclaimer:** AI-generated content may require human review.
 
+---
 
+## User Experience Flow
 
-Core Features:  
+Unity Task provides a seamless pipeline to take you from raw meeting content to actionable, scheduled tasks:
 
-  
+1. **Summarize:** Paste meeting transcripts to extract key points, action items, and deadlines.
+2. **Investigate:** Select key points from your summary to immediately trigger deep AI research and insights.
+3. **Plan:** Send researched action items straight to the Task Planner for smart prioritization and calendar scheduling.
+4. **Assist:** Consult the built-in AI Chatbot anytime for quick queries or task adjustments.
 
-Meeting Notes Summarizer (key points, actions, deadlines)  
+---
 
-AI Task Planner (prioritization + scheduling)   
+## Core Features
 
-AI Research Assistant (insights + summaries)   
+* **Meeting Notes Summarizer:** Converts long meeting transcripts into structured key points, action items, and explicit deadlines.
+* **AI Research Assistant:** Takes key takeaways and conducts deep background research, providing actionable insights and market context.
+* **AI Task Planner:** Automatically prioritizes action items based on urgency/impact and maps them into an optimized schedule.
+* **AI Chatbot Interface:** A context-aware virtual assistant available across the dashboard for real-time task management and quick edits.
 
-AI Chatbot Interface   
+---
 
-Requirements:  
+## Design System & UI
 
-Use structured prompt engineering for each feature   
+Built with a modern SaaS visual identity featuring high-end visual polish:
 
-Ensure professional, clear AI outputs   
+* **Chameleon Gradients:** Dynamic, modern color transitions tailored to dynamic UI states.
+* **Reflective Edges:** Subtle highlight borders giving cards and modals depth.
+* **Frosted Glass (Glassmorphism):** Translucent backdrop filters for floating navigation and overlay components.
+* **Responsive Dashboard Layout:** Sidebar navigation with a crisp, card-based main display. Full responsive support across desktop, tablet, and mobile displays.
 
-Include loading states and responsive design   
+---
 
-Add disclaimer: “AI-generated content may require human review”   
+## Tech Stack & AI Architecture
 
-Design Style:  
+* **Frontend:** React / Next.js, Tailwind CSS
+* **Icons & UI:** Lucide React, Framer Motion (for smooth transitions & loading states)
+* **AI Orchestration:** Structured Prompt Engineering with JSON Schema outputs (OpenAI GPT-4o / Anthropic Claude 3.5 Sonnet)
 
-Modern SaaS UI (clean, minimal, professional)   
-Chameleon Gradients
-Reflective Edges
-Frosted Glass
-Sidebar navigation + card-based layout   
+---
 
-Output:  
+## Getting Started
 
-A fully functional prototype with interactive UI and AI-powered features. 
+### Prerequisites
+* Node.js (v18.0 or higher)
+* NPM or YARN
 
+### Local Development (Optional)
+If you wish to clone and run the repository locally for development or contribution:
 
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Dineo-Bogoshi/unitytaskco.git
+   cd unity-task
 
-Additional notes - I would like the user experience story to look something like this: users are able to get their meeting notes, then are provided with an option to do research on key points and then the ai task planner can sort tasks according to prioritization and scheduling
+2. **Install dependencies:**
+   ```bash
+   npm install
 
-This project was built with [Lovable](https://lovable.dev).
+3. **Start the local server:**
+   ```base
+   npm run dev
+
+---
+
+This prototype was generated and iterated using [Lovable](https://lovable.dev). Structured prompt engineering techniques were applied across the application to enforce strict schema outputs, handle interactive loading states, ensure reliable execution across the Meeting-to-Research-to-Planner workflow.
 
 **Live app**: https://unitytaskco.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/d7e3e1b5-19b9-47c9-aaed-e52a7d3ae8b8).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
